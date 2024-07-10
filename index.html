@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="text-center text-white p-4">Calculator</h1>
+    </header>
+    <section
+      class="d-flex flex-column justify-content-center align-items-center"
+    >
+      <div>
+        <div class="row">
+          <input type="text" id="display" class="col-12" disabled />
+          <button onclick="clearInput()" class="col-12 mt-2">Clear</button>
+        </div>
+        <div class="mt-2 row">
+          <button onclick="addNumber(7)" class="col-3">7</button>
+          <button onclick="addNumber(8)" class="col-3">8</button>
+          <button onclick="addNumber(9)" class="col-3">9</button>
+          <button onclick="appendOperator('/')" class="col-3">/</button>
+        </div>
+        <div class="mt-2 row">
+          <button onclick="addNumber(4)" class="col-3">4</button>
+          <button onclick="addNumber(5)" class="col-3">5</button>
+          <button onclick="addNumber(6)" class="col-3">6</button>
+          <button onclick="appendOperator('*')" class="col-3">*</button>
+        </div>
+        <div class="mt-2 row">
+          <button onclick="addNumber(1)" class="col-3">1</button>
+          <button onclick="addNumber(2)" class="col-3">2</button>
+          <button onclick="addNumber(3)" class="col-3">3</button>
+          <button onclick="appendOperator('-')" class="col-3">-</button>
+        </div>
+        <div class="mt-2 row">
+          <button onclick="addNumber(0)" class="col-3">0</button>
+          <button onclick="appendOperator('.')" class="col-3">.</button>
+          <button onclick="calculate()" class="col-3">=</button>
+          <button onclick="appendOperator('+')" class="col-3">+</button>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="index.js"></script>
+</html>
